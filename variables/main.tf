@@ -29,6 +29,6 @@ output "x1" {
     value = "value of x - ${var.z}"
  }
 
- output "x1" {
+ output "x2" {
      value = "value of x - ${var.x}"
   }
