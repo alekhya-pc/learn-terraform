@@ -1,3 +1,3 @@
 output "abc" {
-    default = "Hello World"
+    value = "Hello World"
 }
