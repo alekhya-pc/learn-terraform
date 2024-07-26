@@ -53,3 +53,7 @@ output "l" {
 output "m" {
     value = "course name - ${var.m["course"]} , Trainer name - ${var.m["trainer"]}"
 }
+
+
+###
+variable "c" {}
