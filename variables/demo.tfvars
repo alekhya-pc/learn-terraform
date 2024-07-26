@@ -1,1 +1,1 @@
-c = 300
+c = 300 # (to call this value we need to give : gitpull ; terraform init ; terraform apply -auto-approve -var-file=demo.tfvars)
