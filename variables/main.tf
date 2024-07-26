@@ -55,8 +55,10 @@ output "m" {
 }
 
 
-###
-variable "c" {}
+### here we can access from command prompt line by giving -var c=100
+variable "c" {
+    type = number #(here if we dont use type then it will 100 as string and print in quotes)
+    }
 output "c" {
     value = var.c
  }
