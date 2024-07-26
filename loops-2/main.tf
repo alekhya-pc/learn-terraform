@@ -14,3 +14,16 @@ variable "fruits" {
         }
     }
 }
+
+resource "null_resource" "instances" {
+    for_each = var.fruits
+    }
+
+
+variable "instances" {
+    default = {
+        frontend = {}
+        catalogue = {}
+        mongo = {}
+    }
+}
