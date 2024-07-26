@@ -18,7 +18,7 @@ variable "z" {
 # values numbers and booleans need not to be quoted
 
 # List Variable
-variable "1" {
+variable "l" {
     default = [10 , 20 , "abc" , false]
 }
 # values in the list may not be same datatype
