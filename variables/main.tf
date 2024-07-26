@@ -17,6 +17,12 @@ variable "z" {
 
 # values numbers and booleans need not to be quoted
 
+# List Variable
+variable "1" {
+    default = [10 , 20 , "abc" , false]
+}
+# values in the list may not be same datatype
+
 # output
 # Direct values does not require to be accessed with ${}
 output "x" {
@@ -27,8 +33,12 @@ output "x" {
 
 output "x1" {
     value = "value of x - ${var.z}"
- }
+}
 
- output "x2" {
+output "x2" {
      value = "value of x - ${var.x}"
-  }
+}
+
+output "l" {
+    value = var.l[0]
+}
